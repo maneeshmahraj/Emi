@@ -1,0 +1,865 @@
+ *
+{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    /* background-image: url("../public/Images/apple.jpg"); */
+    background-size: cover;
+    
+}
+ nav
+{
+    width: 100%;
+    height: 70px;
+    display: flex;
+   /* background-color:rgb(158, 156, 156); */
+    background: linear-gradient(rgb(158, 156, 156),rgb(5, 240, 220)); 
+}
+nav .logo
+{
+    
+    font-size: 40px;
+    align-items: center;
+    margin: 0px 40px;
+    line-height: 70px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+    color:rgb(44, 21, 21);
+    width: 30%;
+}
+nav ul 
+{
+   display: flex;
+   margin: 20px 0px;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+nav ul li{
+    margin: 0px 20px;
+    list-style-type: none;
+}
+.link
+{
+    text-decoration: none;
+    color:white;
+}
+.link:hover
+{
+    color: black;
+}
+
+
+@media(max-width:995px)
+{
+       nav ul 
+       {
+        font-size: 18px;
+        margin: 10px 5px;
+        flex-wrap: wrap;
+       }
+}
+@media (max-width:895px)
+{
+    .bar2{
+        display: block;
+        margin-right: 20px;
+    }
+    nav ul
+    {
+       top:65px;
+       left:0px;
+       position: absolute;
+       display: block;  
+       height: 100vh;
+       background-color: skyblue;
+       width: 100%;
+       transition: all .5s;
+    }
+    nav ul li
+    {
+        margin: 20px;
+        display: block;
+    }
+    .link:hover{
+        color: pink;
+    }
+    
+} 
+
+.container 
+{
+    text-align: center;
+    margin-top: 50px;
+   
+  
+   
+}
+.container h1
+{
+    color: lime;
+    margin-bottom: 40px;
+     
+}
+
+
+/* #img1
+{
+    height: 200px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    position: absolute;
+    background-color:purple;
+     transform: translate(-50%,-50%);
+} */
+#btn
+{
+float: left;
+margin-top: 300px;
+}
+#btn2
+{
+float: right;
+margin-top: 300px;
+} 
+ #mybtn
+{
+height: 600px;
+width: 100%;
+display: flex;
+}
+#btn
+{
+height: 600px;
+width: 50%;
+}
+#btn2
+{
+height: 600px;
+width: 50%;
+}
+.input-container
+{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+.counter
+{
+    text-align: center;
+}
+.input-box input
+{
+     height: 50px;
+     border: 1px solid yellowgreen;
+     outline: none;
+     width: 50px;
+     font-size: 20px;
+     margin: 20px;
+     text-align: center;
+     
+      background-color: aqua; 
+     border-radius: 5px;
+}
+.timer-button
+ {
+    height: 50px;
+    width: 100px;
+    margin: 20px;
+    border: none;
+    background-color: purple;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 20px;
+ }
+ .timer-box
+ {
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+ }
+.faq-box
+{
+    background-color: rgb(43, 60, 77);
+    margin: 20px;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+    color: rgb(0,255,23);
+}
+.que
+{
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 20px;
+}
+.que button
+{
+    height: 40px;
+    width: 40px;
+    border: none;
+    outline: none; 
+    background-color: rgb(43, 60, 77);
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+   
+}
+.arrow 
+{
+    transform: rotate(90deg);
+}
+.ans
+{
+    margin: 15px 0px 5px 50px;
+    color: rgb(21,245,213);
+} 
+  .popup
+ {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    padding: 20px;
+    transform: translate(-50%,-50%);
+    border: 1px solid rgb(247, 36, 36);
+    border-radius: 10px;
+ }
+ .popup .form h1{
+    text-align: center;
+    margin: 10px 0px 5px;
+    color: rgb(12, 119, 241);
+ }
+ .popup .form .popup-element
+ {
+    margin: 20px 30px 10px 10px;
+ }
+ .popup .form .popup-element label
+ {
+   color: rgb(12, 119, 241);
+   font-weight: bold;
+ }
+ .popup .form .popup-element input
+ {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid purple;
+    outline: none;
+    border-radius: 5px;
+ }
+ body
+ {
+    background-color:white;
+ }
+  .offer-btn
+  {
+    top:50%;
+    left: 50%;
+    position: absolute;
+    background-color: purple;
+    color: #fff;
+    border: none;
+    outline: none;
+    transform: translate(-50%,-50%);
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .modal2
+  {
+    height: 100vh;
+        background:aqua;
+      filter: blur(100px);  
+      -webkit-filter: blur(100px);
+      z-index: -1;
+  }
+  .modal
+  {
+    top:50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    height: 200px;
+    width: 280px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px; 
+    background: salmon; 
+    
+
+
+  }
+  .modal .content
+  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 30px;
+    color: white;
+    font-size: 20px;
+    
+
+  }
+  .close-btn
+  {
+    border: none;
+    outline: none;
+    background-color: salmon;
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .accept-btn
+  {
+    
+    background-color: purple;
+    color: #fff;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0px 30px;
+  }
+  .accepted
+  {
+    top:50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    color:purple;
+    font-weight: bold;
+  }
+  .header 
+  {
+    top:40px;
+    left: 20%;
+    position: absolute;
+  }
+  .header h1{
+    text-align: center;
+  }
+  .action-btn
+  {
+    display: flex;
+    justify-content: center;
+
+  }
+  .user-action
+  {
+    display: flex;
+    justify-content: center;
+  }
+  .action-btn button
+  {
+    background-color: purple;
+    color: #fff;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 5px;
+  }
+  .user-action button
+  {
+    background-color: purple;
+    color: #fff;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 5px;
+  }
+  .history
+  {
+    height: 260px;
+    width: 300px;
+    border: 1px solid black;
+    margin: 100px auto;
+  text-align: center;
+    border-radius: 5px;
+    outline: none;
+    overflow-y: auto;
+  }
+  .shoping-input input
+  {
+    width: 230px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border:1px solid #b6b3b3;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .shopping-list
+  {
+    width: 230px;
+    margin: 10px auto;
+    height: 150px;
+    background-color: lightgray;
+    overflow-y: auto;
+  }
+  .product
+  {
+    text-align: left;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  .product:hover
+  {
+    background-color: aquamarine;
+  }
+  .bucket
+  {
+    width: 230px;
+    margin: 40px auto;
+  }
+  .bucket-item
+  {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    background-color: rgb(8, 133, 133);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .bucket-item button
+  {
+    background-color: rgb(8, 133, 133) ;
+    border: none;
+    
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .bucket-item button:hover
+  {
+    background-color: white;
+    border-radius: 50px;
+  }
+  .strik
+  {
+    text-decoration: line-through;
+    color: red;
+  }
+  .conti
+  {
+    text-align: center;
+    margin: auto;
+    color: rgb(51, 52, 53);
+  }
+  .container
+  {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+     left: 40%;
+    
+     top:100px;
+     position: absolute;
+  }
+ 
+  .container label
+  {
+    font-size: 30px;
+    font-weight: bold;
+    color: orangered;
+  }
+  .container input{
+    height: 30px;
+    padding: 5px;
+    width: 300px;
+    font-size: 20px;
+    outline: none;
+    border-radius: 5px;
+    margin: 20px 0px;
+    border: 1px solid rgb(228, 225, 225);
+  }
+  .container button
+  {
+    background-color: purple;
+    color: #fff;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 5px;
+  }
+  .slice
+  {
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .slice img{
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+  }
+  .slice button
+  {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    outline:  none;
+    border: none;
+    cursor: pointer;
+  }
+  .right
+  {
+    right: 0px;
+  }
+  .otpjanretor 
+  {
+    width: 100%;
+    height: 100vh;
+  }
+  .otpjanretor input{
+    height: 40px;
+    width: 40px;
+    
+    text-align: center;
+    font-size: 20px;
+    align-items: center;
+    margin: 10px;
+  }
+  .otpjanretor input:focus
+  {
+    outline-color:rgb(102, 26, 241);
+  }
+  .otpjanretor button
+  {
+    background-color: purple;
+    color: #fff;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 5px;
+  }
+  .error
+  {
+    border: 1px solid red;
+  }
+.star
+{
+text-align: center;
+}
+.star1
+{
+  font-size: 60px;
+  margin: 10px;
+
+}
+.star button
+{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.on
+{
+  color: black;
+}
+.off
+{
+  color: antiquewhite;
+}
+.board
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.todo
+{
+  width: 33%;
+  height: 400px;
+}
+.doing
+{
+  width: 33%;
+  height: 400px;
+  margin: 0px 10px;
+}
+.done
+{
+  width: 33%;
+  height: 400px;
+}
+.todo-cul
+{
+  background-color: beige;
+  padding: 10px 0px;
+}
+.doing-cul
+{
+  background-color: lightblue;
+  padding: 10px 0px;
+}
+.done-cul
+{
+  background-color: lightgreen;
+  padding: 10px 0px;
+}
+.task-item
+{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  border: .7px solid gainsboro;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: grab;
+  font-size: 20px;
+}
+.task-item:hover
+{
+  background-color: lightgray;
+}
+.btn
+{
+  height: 60px;
+  width: 60px;
+  padding: 5px;
+ text-align: center;
+}
+.btn:hover
+{
+  background-color: purple;
+  cursor: pointer;
+  border-radius: 50%;
+  color: white;
+  padding: 5px;
+}
+.prent
+{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+ .inpt-task input
+ {
+  width: 200px;
+  height: 30px;
+  outline: none;
+  border: .7px solid gray;
+  border-radius: 5px;
+  font-size: 20px;
+
+
+ }
+ .wrapper input
+ {
+  height: 30px;
+  width: 100px;
+  outline: none;
+  font-size: 20px;
+  border: 1px solid rgb(193, 192, 192);
+  border-radius: 5px;
+ }
+  .wrapper select
+  {
+    height: 35px;
+    width: 100px;
+    margin-left: 20px;
+     border: 1px solid rgb(193, 192, 192);
+  border-radius: 5px;
+  }
+  .curr-info
+  {
+    display: flex;
+    justify-content: center;
+   
+    justify-content: space-between;
+    width: 300px;
+   font-size: 30px;
+   margin-top: 30px;
+  }
+  .red
+  {
+    color: red;
+  }
+  .green
+  {
+    color: green;
+  }
+  .App
+  {
+    text-align: center;
+  }
+  .container1
+  {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+     left: 40%;
+     top:100px;
+     position: absolute;
+  }
+ 
+  .container1 label
+  {
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+  
+  }
+  .container1 input{
+    height: 25px;
+    padding: 5px;
+    width: 300px;
+    font-size: 17px;
+    outline: none;
+   
+    margin: 20px 0px;
+   
+  }
+  .container1 button
+  {
+    background-color: purple;
+    color: #fff;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 5px;
+    margin-left: 70px;
+  }
+  .form-item
+  {
+    display:flex ;
+    flex-direction: column;
+  }
+  .error1
+  {
+    color: red;
+  }
+  .error-border
+  {
+    border: 1px solid red;
+  
+  }
+  .fldr
+  {
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  .fldrbtn 
+  {
+    
+    font-size: 20px;
+    position: relative;
+    top:4px;
+    left: 0px;
+    
+  }
+  .fldrname
+  {
+    font-size: 20px;
+    color: purple;
+  }
+  .container
+  {
+    margin-top: 40px;
+    width: 400px;
+    flex-direction: column;
+  }
+  .progress-bar
+  {
+    height: 20px;
+    width: 100%;
+    background-color: lightgray;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .master
+  {
+    
+    height: 300px;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .product-list
+  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .item
+  {
+    height: 100px;
+    width: 100px;
+    border: 0.8px solid lightgray;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .category
+  {
+    font-size: 10px;
+   font-style: italic;
+  }
+  .filters button
+  {
+  
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 5px;
+    
+  }
+.selected
+{
+  color: white;
+  background-color: black;
+}
